@@ -1,0 +1,9 @@
+- name: Github
+  image_path: /assets/images/github.png
+  external_url: https://github.com/lbulgarelli
+- name: LinkedIn
+  image_path: /assets/images/linkedin.png
+  external_url: https://www.linkedin.com/in/lbulgarelli/
+- name: Google Scholar
+  image_path: /assets/images/scholar.png
+  external_url: https://scholar.google.com/citations?user=vKfiYkcAAAAJ&hl=en

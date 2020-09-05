@@ -1,0 +1,12 @@
+- title: MIMIC-IV
+  image_path: /assets/images/mimic.png
+  description: Publicly available database of real hospital stays for patients admitted to a tertiary academic medical center in Boston, MA, USA.
+  url: https://mimic-iv.mit.edu
+- title: Calibration
+  image_path: https://github.com/lbulgarelli/calibration/raw/master/output_8_1.png
+  description: Package for assessment of calibration in binomial prediction models.
+  url: https://github.com/lbulgarelli/calibration
+- title: pyROC
+  image_path: /assets/images/pyroc.png
+  description: Package for calculating area under the ROC and p-values when comparing predictions.
+  url: https://github.com/alistairewj/pyroc

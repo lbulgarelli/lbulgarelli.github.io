@@ -1,0 +1,9 @@
+# Set theme
+remote_theme: lbulgarelli/personal-website
+
+# Data
+title: Lucas's personal website
+name: Lucas Bulgarelli
+photo: /assets/images/me.jpeg
+position: Data Scientist & Engineer
+email: lucas1@mit.edu
