@@ -2,9 +2,31 @@
 remote_theme: lbulgarelli/personal-website
 
 # Data
-title: Lucas's personal website
 name: Lucas Bulgarelli
-photo: /assets/images/me.jpeg
+image: /assets/images/me.jpeg
 position: Data Scientist & Engineer
 email: lucas1@mit.edu
-google-search-console: aOpANQPhr4wfujF8HqSnPImTpgHuYREwR4yQ-pNvTBY
+plugins:
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO tag
+title: Lucas Bulgarelli
+google_site_verification: aOpANQPhr4wfujF8HqSnPImTpgHuYREwR4yQ-pNvTBY
+social:
+  name: Lucas Bulgarelli
+  links:
+    - https://twitter.com/l_bulgarelli
+    - https://www.facebook.com/bulgarelli.lucas
+    - https://www.linkedin.com/in/lbulgarelli/
+    - https://github.com/lbulgarelli
+    - https://scholar.google.com/citations?user=vKfiYkcAAAAJ
+    - https://www.instagram.com/bulgarelli_l/
+
+# Defaults
+defaults:
+- scope:
+    path: ""
+  values:
+    image: /assets/images/me.jpeg
