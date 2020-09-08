@@ -24,21 +24,21 @@ So let's dive in and see what it is all about.
 &nbsp;  
 ## The all *new* data
 
-In the third version of MIMIC, there were two different systems from which the ICU data was sourced, *carevue* and *metavision*. This occurred due to a change in the ICU system during the period comprised by the database. Because data was made available to researchers in the closest way possible to its source, we had different representations of the same clinical concept depending on the date a patient was admitted.
+In the third version of MIMIC, there were two different systems from which the ICU data was sourced, *carevue* and *metavision*. This occurred due to a change in the ICU system during the period comprised by the database. As a core principle of sharing the data was distributing it "as-is" to reflect real clinical practice, we had different representations of the same clinical concept depending on the date a patient was admitted.
 
-Now, if you have worked with MIMIC-III, you probably know all about the pains of wrangling data from the two systems and has your own grudge with *carevue*. You might have even given up more recently and excluded carevue patients altogheter from your study. Indeed, all the work might not be worth considering carevue admissions happened 12-19 years ago.
+Now, if you have worked with MIMIC-III, you probably know all about the pains of wrangling data from the two systems and you have your own grudge with *carevue*. You might have even given up more recently and excluded carevue patients altogheter from your study. Indeed, all the work might not be worth considering carevue admissions happened 12-19 years ago.
 
-After executing a carrefuly plotted vendetta, we have finally **dropped *carevue***. Now, the available data from the ICU is acquired only from *metavision*. Having a single source of data will facilitate things, and considering that we are now including data up to **2019 (yay!)**, *metavision* will award us with *11 years* of data.
+After executing a carrefuly plotted vendetta, we have finally **dropped *carevue***. Now, the available data from the ICU is acquired only from *metavision*. Having a single source of data simplifies data extraction considerable. Considering that we are now including data up to **2019 (yay!)**, *metavision* will award us with *11 years* of data.
 
 Is that enough?
 
 <div style="margin: 25px 75px;"><blockquote class="twitter-tweet mx-auto"><p lang="en" dir="ltr">MIMIC-IV is public! ~70,000 ICU stays, deidentified, ready for research. It&#39;s only 7 GB! ... but with &gt;300 million charted observations, there&#39;s a lot to dig through. Quick thread on the highlights. <a href="https://t.co/N6Rzrrkjxg">https://t.co/N6Rzrrkjxg</a></p>&mdash; Alistair Johnson (@alistairewj) <a href="https://twitter.com/alistairewj/status/1295406346788012035?ref_src=twsrc%5Etfw">August 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
 
-That means even with the exclusion of *carevue*, we ended up with more ICU stays than we had on MIMIC-III.
+Even with the exclusion of *carevue*, we ended up with more ICU stays than we had in MIMIC-III.
 
 But, what does it mean to have more recent data available?
 
-**Things change, and so does standard of care**. Having up-to-date information will allow studies to include the most current treatments into their analysis, better reflecting reality and hopefully increasing the chances of obtaining more significant improvements in healthcare. TODO: EXAMPLES.
+**Things change, and so does the standard of care**. Having up-to-date information will allow studies to include the most current treatments into their analysis, better reflecting reality and hopefully increasing the chances of obtaining more significant improvements in healthcare. Ventilation practices have markedly changed over the past 15 years, all for the better, and MIMIC-IV opens the door to improving even further.
 
 &nbsp;  
 ## Actual year included
@@ -171,16 +171,16 @@ We have finished MIMIC-CORE! Having a good unsderstading of this dataset will fa
 
 
 &nbsp;  
-## electronic Medicine Administration Record (eMAR)
+## Medications
+
+Studying the effect of various treatments is a burgeoning field of retrospective observational research. MIMIC-III was no exception, though it could be hard to infer from the database when a patient was receiveing a given treatment, as only intravenous medications were routinely documented. Enter the electronic Medicine Administration Record (eMAR).
 
 ![](https://pbs.twimg.com/media/Efozfq3XYAA6zMm?format=jpg&name=small)
 <p style="font-size: .8em; padding: 0 15px;" markdown="1">
 eMAR is now included and provides more precise information about the drugs being administered.
 </p>
 
-Bedside staff will scan barcodes for each individual formulary unit of a medication when administering it. This allows for a granular, high resolution record of when a medication was given.
-
-Patients aren't just being monitored though, they are also treated. Prescriptions tell you about intention to treat; in MIMIC-IV we have actual administrations via barcode scanning (eMAR).
+Bedside staff will scan barcodes for each individual formulary unit of a medication when administering it. This allows for a granular, high resolution record of when a medication was given. eMAR, while a rich and excellent source of information, was only recently implemented and as such roughly half of the patients in MIMIC-IV have eMAR data. Not to fear: the prescriptions table has been upgraded from MIMIC-III. All start and stop dates have been augmented with the time of day, and the time at which the prescription was entered is also available.
 
 &nbsp;  
 ## Chest X-Rays
