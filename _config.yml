@@ -13,6 +13,7 @@ plugins:
 
 # SEO tag
 title: Lucas Bulgarelli
+description: Data Scientist & Engineer
 google_site_verification: aOpANQPhr4wfujF8HqSnPImTpgHuYREwR4yQ-pNvTBY
 social:
   name: Lucas Bulgarelli
@@ -29,4 +30,7 @@ defaults:
 - scope:
     path: ""
   values:
-    image: /assets/images/me.jpeg
+    image:
+      path: /assets/images/banner.jpg
+      height: 1800
+      width: 945
