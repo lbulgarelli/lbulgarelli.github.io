@@ -41,7 +41,133 @@ But, what does it mean to have more recent data available?
 **Things change, and so does standard of care**. Having up-to-date information will allow studies to include the most current treatments into their analysis, better reflecting reality and hopefully increasing the chances of obtaining more significant improvements in healthcare. TODO: EXAMPLES.
 
 &nbsp;  
-## Modular design
+## Actual year included
+
+Or almost.
+
+From comparing the changes in outcome according to the availability of new treatments, being able to select patients in a period in which a specific drug was most recommended, or even including only the most recent admissions. Tell us, *what is it you truly desire?* 
+
+For any of these, you need information on what date the patient was admitted. Because MIMIC needs to be HIPAA compliant in order to be public, the real precise dates can't be in the database. But we can keep some of the information. **MIMIC-III kept the day of the week and season** consistent with the real information, and while some researchers might have used this in their studies, others have asked for the inclusion of the year the patient was admitted. While we can argue about which is more important, the fact is, they can't both be included. It has been 5 years rom the launch of MIMIC-III, so for the fourth version, we have decided to give opportunity for new research to be conducted.
+
+**MIMIC-IV has the *approximate* year of the events**. 
+
+But hey, why not the exact date? Through the entire process of building the dabase, we have special care in protecting personal information, this is a result of it.
+
+How does this look exatcly? We will explain in the next section.
+
+&nbsp;  
+## MIMIC in flavors
+
+**We have big plans for MIMIC**, and they don't fit in one dataset.
+
+Now, MIMIC has multiple modules: CORE, HOSP, ED, ICU, and CXR.
+
+The practical meaning of this change is a greater transparency on the type and source of the data, with the additional flexibility to download and use only the data you need. Let's go into the details for each flavor.
+
+#### MIMIC-CORE
+
+It is as the name says, the core of MIMIC. It has information that is necessary to navigate any and accross all MIMIC flavors.
+
+![](/assets/images/mimic-iv-available/mimic-core.jpg)
+
+The interactions of every health system begins with the **patient**. They are feeling unwell, and hopefully seek for a physician to get orientation or if necessary, a treatment. In the case that the patient goes to Beth Israel Deaconess Medical Center's emergency room or is referred there by a physician, he will start his interaction with the system from which MIMIC collects its data.
+
+Throughout his hospital **admission**, the patient might need to navigate the hospital buildings and wards for different examinations. These changes in a patient's location inside the hospital are referred to as **transfers**. That's how we are able to know the patient's status and their footprints, *but most importantly*, the information on MIMIC-CORE.
+
+**patients, admissions, and transfers**.
+
+Let's start with the **patient**.
+
+`subject_id` | `anchor_age` | `anchor_year` | `anchor_year_group`
+--- | --- | --- | ---
+10014729 | 21 | 2125 | 2011 - 2013
+
+<p style="font-size: .8em; padding: 0 15px; margin-top: 10px;" markdown="1">
+Partial view on the **patients** table showing patient 10014729.
+</p>
+
+Here, `subject_id` identifies a single patient. Very important to note, in the modular designed introduced in MIMIC-IV, this is the main link between them. Here we will follow patient 10014729.
+
+You might have noticed we have two *year* fields here.
+
+That happens in deidentification, when have all dates on MIMIC shifted into the future. For each patient, we end up with the following:
+
+- The earliest year into which his data was shifted is available in `anchor_year`.
+- `anchor_age` is simply the age of such patient in the `anchor_year`.
+- `anchor_year_group` corresponds to the approximate real year of his first event in the database. 
+
+Using the example patient, it means that:
+
+- The first time 10014729 had any data stored on MIMIC was in fictional 2125.
+- He was 21 years old in 2125.
+- The fictional year of 2125 happened somewhere between 2011 and 2013.
+
+Hopefully not too hard.
+
+Now, on to **admissions**.
+
+`subject_id` | `hadm_id` | `edregtime` | `edouttime`
+--- | --- | --- | ---
+10014729 | 28889419 |  | 
+10014729 | 23300884 | 2125-03-19T12:36:00 | 2125-03-19T18:45:00
+
+<p style="font-size: .8em; padding: 0 15px; margin-top: 10px;" markdown="1">
+Partial view on the **admissions** emergercy room times for patient 10014729.
+</p>
+
+`subject_id` | `hadm_id` | `admittime` | `dischtime`
+--- | --- | --- | ---
+10014729 | 28889419 | 2125-02-27T07:15:00 | 2125-03-06T14:25:00
+10014729 | 23300884 | 2125-03-19T16:58:00 | 2125-03-28T13:37:00
+
+<p style="font-size: .8em; padding: 0 15px; margin-top: 10px;" markdown="1">
+Partial view on the **admissions** table with admission times for patient 10014729.
+</p>
+
+Here we can see that our example patient has been admitted to the hospital twice, in February 27th and March 19 of 2125. His second admission being preceded by a visit to the emergency room. 
+
+If you carefully examine that admission, you will notice that `admittime` i.e. the time the patient was admitted to the hospital, happens before `edouttime`. But wait, how can a patient be in two places?
+
+Well, the ED and the hospital where the data is collected use different systems. The timing information provided, specially in the discharge, is not always precise.
+
+As we said previously, we always try to publish the dataset as close as possible to the source data. Fixing this is not trivial, and it requires a substantial amount of data wrangling and data quality checks. We didn't want you to be unaware of that, so in the admissions table, we just provide you with the data as is.
+
+But we are very appreciative of our users, and know that even if they were to put in the work to fix this, they wouldn't be able to check the quality of their work. So, we have worked to provide you with consistent timing information, putting a lot of effort to make sure it was as close to reality as possible. We provide that information in the **transfers** table, so let's look into it.
+
+`hadm_id` | `transfer_id` | `intime` | `outtime`
+--- | --- | --- | ---
+23300884 | 33508676 | 2125-03-19T12:36:00 | 2125-03-19T16:59:47	
+23300884 | 37378329 | 2125-03-19T16:59:47 | 2125-03-19T17:06:15
+23300884 | 30225236 | 2125-03-19T17:06:15 | 2125-03-20T10:39:52
+... | ... | ... | ...
+23300884 | 36856361 | 2125-03-23T17:15:22 | 2125-03-28T13:44:57
+23300884 | 35190340 | 2125-03-28T13:44:57 | 
+
+<p style="font-size: .8em; padding: 0 15px; margin-top: 10px;" markdown="1">
+Partial view on the **transfers** table for admission 23300884 of patient 10014729.
+</p>
+
+`hadm_id` | `transfer_id` | `eventtype` | `careunit`
+--- | --- | --- | --- | --- | ---
+23300884 | 33508676 | ED | Emergency Department
+23300884 | 37378329 | admit | Vascular
+23300884 | 30225236 | transfer | Vascular
+... | ... | ... | ...
+23300884 | 36856361 | transfer | Cardiac Surgery
+23300884 | 35190340 | discharge |
+
+<p style="font-size: .8em; padding: 0 15px; margin-top: 10px;" markdown="1">
+Partial view on the **transfers** table for admission 23300884 of patient 10014729.
+</p>
+
+Here, you can see the times are aligned, each intime being the exact same as the outtime of the patient's last location. This table is straightforward, every change in the patient's location is recorded here, things to note:
+
+- For emergency room visits, the `eventtype` will always be set to "ED".
+- The time and care unit of the patient's admission to the hospital will have `eventy_type` set to `admit`
+- The time of patient discharge from the hospital will be on available through the `intime` of the transfer with `eventy_type` set to "discharge".
+- Any other change in the patient's location will have event_type `transfer`
+
+We have finished MIMIC-CORE! Having a good unsderstading of this dataset will falicitate to work with one or multiple flavors of MIMIC, so we hope to have provided enough information.
 
 
 &nbsp;  
