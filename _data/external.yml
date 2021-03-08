@@ -1,0 +1,167 @@
+books:
+  name: Books & Chapters
+  limit: 4
+  list:
+    - title: Building Electronic Health Record Databases for Research
+      subtitle: Leveraging Data Science for Global Health
+      year: 2018
+      authors: <strong>Lucas Bulgarelli</strong>, Antonio Nunez, Rodrigo Octavio Deliberato
+      url: https://cetic.br/media/docs/publicacoes/2/tic_saude_2017_livro_eletronico.pdf
+      image: /assets/images/global-health.jpg
+    - title: "Leveraging Electronic Health Records: Secondary Analysis to Improve Patient Care"
+      subtitle: Survey on the Use of Information and Communication Technologies in Brazilian Healthcare Facilities - ICT in Health
+      year: 2017
+      authors: <strong>Lucas Bulgarelli</strong>, Rodrigo Octávio Deliberato, Ary Serpa Neto, David J Stone, Leo Anthony Celi
+      url: https://cetic.br/media/docs/publicacoes/2/tic_saude_2017_livro_eletronico.pdf
+      image: /assets/images/tic-2017.png
+media:
+  name: Media
+  limit: 4
+  list:
+    - title: Engenharia de Machine Learning na saúde
+      subtitle: Podcast (Portuguese), dados&saúde
+      year: 2020
+      authors: <strong>Lucas Bulgarelli</strong>
+      url: https://anchor.fm/dadosesaude/episodes/33-Engenharia-de-Machine-Learning-na-sade--com-Lucas-Bulgarelli-ekctsn
+      image: /assets/images/podcast.jpg
+    - title: Intercâmbio de Idiomas nas Melhores Universidades
+      subtitle: Interview (Portuguese), Estudar Fora
+      year: 2016
+      authors: <strong>Lucas Bulgarelli</strong>
+      url: https://www.estudarfora.org.br/wp-content/uploads/2016/05/Ebook_IdiomasEmUniversidades.pdf
+      image: /assets/images/estudar-fora.png
+    - title: Engenharia de Machine Learning na saúde
+      subtitle: Interview (Portuguese), Estudo no Exterior
+      year: 2016
+      authors: <strong>Lucas Bulgarelli</strong>
+      url: https://estudonoexterior.com/project/lucas-bulgarelli-lewis-clark-college
+      image: /assets/images/estudonoexterior.png
+events:
+  name: Events
+  limit: 4
+  list:
+    - title: "MIMIC: Beyond the ICU"
+      subtitle: MIMIA'19
+      year: 2019
+      location: Shenzhen, China
+      authors: <strong>Lucas Bulgarelli</strong>
+      url: https://researcher.watson.ibm.com/researcher/view_group.php?id=10058
+      image: /assets/images/miccai-2019.jpg
+    - title: MIT-Harvard Medical School Healthcare Innovation Bootcamp & Trek
+      subtitle: Panelist
+      year: 2019
+      location: Cambridge, MA, U.S.
+      authors: <strong>Lucas Bulgarelli</strong>
+      image: /assets/images/mit-bootcamp.png
+    - title: "Big Data 360º"
+      subtitle: II Artificial Intelligence in Healthcare Symposium and Datathon
+      year: 2019
+      location: Sao Paulo, Brazil
+      authors: <strong>Lucas Bulgarelli</strong>
+      image: /assets/images/ii-hiae.jpeg
+    - title: Building Eletronic Health Records Databases
+      subtitle: Jornadas de Innovación en Salud Digital
+      year: 2018
+      location: Buenos Aires, Argentina
+      authors: <strong>Lucas Bulgarelli</strong>, Rodrigo Octávio Deliberato
+      url: https://bigdata2018.wixsite.com/bigdatabigchallenges
+      image: /assets/images/jisa.png
+    - title: Datathon for Intensive Care - DAT-ICU
+      subtitle: Mentor
+      year: 2018
+      location: Paris, France
+      authors: <strong>Lucas Bulgarelli</strong>
+      uri: http://blogs.aphp.fr/dat-icu/
+      image: /assets/images/dat-icu.jpg
+    - title: MIT-HIAE Datathon in Healthcare
+      subtitle: Mentor
+      year: 2017
+      location: Sao Paulo, Brazil
+      authors: <strong>Lucas Bulgarelli</strong>
+      url: https://www.einstein.br/pesquisa/ultimas-noticias/mit-hiae-datathon-in-healthcare
+      image: /assets/images/i-hiae.jpg
+    - title: Hacking Hackatons
+      subtitle: Mentor
+      year: 2016
+      location: Cambridge, MA, U.S.
+      authors: <strong>Lucas Bulgarelli</strong>
+      url: http://sana.mit.edu/node/201
+      image: /assets/images/sana.png
+courses:
+  name: Courses
+  limit: 4
+  list:
+    - title: "HST.953: Collaborative Data Science in Medicine"
+      subtitle: Faculty, Harvard-MIT Health Sciences & Technology
+      year: 2019
+      url: https://criticaldata.mit.edu/blog/2019/08/06/hst-953-2019/
+      image: /assets/images/hst.svg
+    - title: Collaborative Data Science for Healthcare
+      subtitle: Organizer, MIT edX
+      year: 2019
+      url: https://www.edx.org/course/collaborative-data-science-for-healthcare
+      image: /assets/images/edx.png
+    - title: Global Health Informatics to Improve Quality of Care
+      subtitle: Organizer, MIT edX
+      year: 2016
+      url: https://www.edx.org/course/global-health-informatics-to-improve-quality-of-ca
+      image: /assets/images/edx.png
+articles:
+  name: Articles
+  limit: 4
+  list:
+    - title: "1269: Acute Physiology and Chronic Health Evaluation IV in Septic Patients With and Without Cancer"
+      subtitle: Critical Care Medicine
+      year: 2021
+      authors: Larissa Neumann, <strong>Lucas Bulgarelli</strong>, Juan Alfonso Soler Barnes, Hamza Nabulsi, Tom Pollard, Marilyn Schallom, Leo Celi, Lama Nazer
+      url: https://journals.lww.com/ccmjournal/Fulltext/2021/01001/1269__Acute_Physiology_and_Chronic_Health.1237.aspx
+    - title: "Prediction on critically ill patients: The role of “big data”"
+      subtitle: Journal of Critical Care
+      year: 2020
+      authors: <strong>Lucas Bulgarelli</strong>, Rodrigo Octávio Deliberato, Alistair EW Johnson
+      url: https://www.sciencedirect.com/science/article/pii/S0883944120306213
+    - title: Deidentification of free-text medical records using pre-trained bidirectional transformers
+      subtitle: Proceedings of the ACM Conference on Health, Inference, and Learning
+      year: 2020
+      authors: Alistair EW Johnson, <strong>Lucas Bulgarelli</strong>, Tom J Pollard
+      url: https://dl.acm.org/doi/abs/10.1145/3368555.3384455
+    - title: "SEVERITAS: An externally validated mortality prediction for critically ill patients in low and middle-income countries"
+      subtitle: International Journal of Medical Informatics
+      year: 2019
+      authors: Rodrigo Octávio Deliberato, Guilherme Goto Escudero, <strong>Lucas Bulgarelli</strong>, Ary Serpa Neto, Stephanie Q Ko, Niklas Soderberg Campos, Berke Saat, Edson Amaro Júnior, Fabio Silva Lopes, Alistair EW Johnson
+      url: https://www.sciencedirect.com/science/article/pii/S1386505619305131
+    - title: One Size Does Not Fit All-The Implications of Using Body Mass Index in Critical Care Outcomes Research Reply
+      subtitle: Critical Care Medicine
+      year: 2019
+      authors: <strong>Lucas Bulgarelli</strong>, Rodrigo Octavio Deliberato, David J Stone, Leo Anthony Celi, Alistair EW Johnson
+      url: https://scholar.google.com/scholar?oi=bibs&cluster=7175555952777157906&btnI=1&hl=en
+    - title: "Procalcitonin as a Diagnostic, Therapeutic, and Prognostic Tool: a Critical Review"
+      subtitle: Current Treatment Options in Infectious Diseases
+      year: 2019
+      authors: Fabrício Torres de Carvalho, Roberto Rabello Filho, <strong>Lucas Bulgarelli</strong>, Ary Serpa Neto, Rodrigo Octavio Deliberato
+      url: https://url.springer.com/article/10.1007/s40506-019-0178-z
+    - title: An evaluation of the influence of body mass index on severity scoring.
+      subtitle: Critical Care Medicine
+      year: 2019
+      authors: Rodrigo Octavio Deliberato, Ary Serpa Neto, Matthieu Komorowski, David J Stone, Stephanie Q Ko, <strong>Lucas Bulgarelli</strong>, Carolina Rodrigues Ponzoni, Renato Carneiro de Freitas Chaves, Leo Anthony Celi, Alistair EW Johnson
+      url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6336502/
+    - title: Assessing team effectiveness and affective learning in a datathon
+      subtitle: International Journal of Medical Informatics
+      year: 2018
+      authors: Felipe Maia de Toledo Piza, Leo Anthony Celi, Rodrigo Octavio Deliberato, <strong>Lucas Bulgarelli</strong>, Fabricio Rodrigues Torres de Carvalho, Roberto Rabello Filho, Miguel Angel Armengol de La Hoz, Jennifer Cohn Kesselheim
+      url: https://www.sciencedirect.com/science/article/pii/S1386505618300054
+    - title: "Hacking Hackathons: Preparing the next generation for the multidisciplinary world of healthcare technology"
+      subtitle: International Journal of Medical Informatics
+      year: 2018
+      authors: Mataroria P Lyndon, Michael P Cassidy, Leo Anthony Celi, Luk Hendrik, Yoon Jeon Kim, Nicholas Gomez, Nathaniel Baum, <strong>Lucas Bulgarelli</strong>, Kenneth E Paik, Alon Dagan
+      url: https://www.sciencedirect.com/science/article/pii/S1386505617304719
+    - title: First Brazilian datathon in critical care
+      subtitle: Revista Brasileira de Terapia Intensiva
+      year: 2018
+      authors: Ary Serpa Neto, Guillaume Kugener, <strong>Lucas Bulgarelli</strong>, Roberto Rabello Filho, Miguel Ángel Armengol de la Hoz, Alistair EW Johnson, Kenneth E Paik, Felipe Torres, Chen Xie, Edson Amaro Júnior, Leonardo José Rolim Ferraz, Leo Anthony Celi, Rodrigo Octavio Deliberato
+      url: https://www.scielo.br/scielo.php?pid=S0103-507X2018000100006&script=sci_arttext
+    - title: Primeiro datathon brasileiro em terapia intensiva
+      subtitle: Revista Brasileira de Terapia Intensiva
+      year: 2018
+      authors: Ary Serpa Neto, Guillaume Kugener, <strong>Lucas Bulgarelli</strong>, Roberto Rabello Filho, Miguel Ángel Armengol de la Hoz, Alistair EW Johnson, Kenneth E Paik, Felipe Torres, Chen Xie, Edson Amaro Júnior, Leonardo José Rolim Ferraz, Leo Anthony Celi, Rodrigo Octavio Deliberato
+      url: http://rbti.org.br/exportar-pdf/0103-507X-rbti-30-01-0006.pdf
