@@ -110,6 +110,21 @@ articles:
   name: Articles
   limit: 4
   list:
+    - title: "Impact of sex on use of low tidal volume ventilation in invasively ventilated ICU patients—A mediation analysis using two observational cohorts"
+      subtitle: PLoS ONE
+      year: 2021
+      authors: Pien Swart, Rodrigo Octavio Deliberato, Alistair EW Johnson, Tom J Pollard, <strong>Lucas Bulgarelli</strong>, Paolo Pelosi, Marcelo Gama de Abreu, Marcus J Schultz, Ary Serpa Neto
+      url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0253933
+    - title: "Effect of spontaneous breathing on ventilator-free days in critically ill patients-an analysis of patients in a large observational cohort"
+      subtitle: Annals of Translational Medicine
+      year: 2021
+      authors: Aline Mela Dos Reis, Thais Dias Midega, Rodrigo Octavio Deliberato, Alistair EW Johnson, <strong>Lucas Bulgarelli</strong>, Thiago Domingos Correa, Leo Anthony Celi, Paolo Pelosi, Marcelo Gama de Abreu, Marcus J Schultz, Ary Serpa Neto
+      url: https://atm.amegroups.com/article/view/69149/html
+    - title: "Identification of Acute Respiratory Distress Syndrome subphenotypes denovo using routine clinical data: a retrospective analysis of ARDS clinical trials"
+      subtitle: medRxiv
+      year: 2021
+      authors: Abhijit Duggal, Emily Van Ark, <strong>Lucas Bulgarelli</strong>, Matthew Siuba, Jeff Osborn, Deigo Rey, Fernando G Zampieri, Alexandre B Cavalcanti, Israel S Maia, Denise M Paisani, Ligia N Laranjeira, Ary Serpa Neto, Rodrigo Octavio Deliberato
+      url: https://www.medrxiv.org/content/10.1101/2021.07.08.21260102v1.full.pdf
     - title: "1269: Acute Physiology and Chronic Health Evaluation IV in Septic Patients With and Without Cancer"
       subtitle: Critical Care Medicine
       year: 2021
