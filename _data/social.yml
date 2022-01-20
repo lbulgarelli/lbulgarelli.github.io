@@ -7,3 +7,9 @@
 - name: Google Scholar
   image_path: /assets/images/scholar.png
   external_url: https://scholar.google.com/citations?user=vKfiYkcAAAAJ&hl=en
+- name: Twitter
+  image_path: /assets/images/twitter.png
+  external_url: https://twitter.com/l_bulgarelli
+- name: Instagram
+  image_path: /assets/images/instagram.png
+  external_url: https://www.instagram.com/lbulgarelli_/
