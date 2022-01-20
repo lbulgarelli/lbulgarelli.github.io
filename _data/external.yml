@@ -6,7 +6,7 @@ books:
       subtitle: Leveraging Data Science for Global Health
       year: 2018
       authors: <strong>Lucas Bulgarelli</strong>, Antonio Nunez, Rodrigo Octavio Deliberato
-      url: https://cetic.br/media/docs/publicacoes/2/tic_saude_2017_livro_eletronico.pdf
+      url: https://link.springer.com/chapter/10.1007/978-3-030-47994-7_4
       image: /assets/images/global-health.jpg
     - title: "Leveraging Electronic Health Records: Secondary Analysis to Improve Patient Care"
       subtitle: Survey on the Use of Information and Communication Technologies in Brazilian Healthcare Facilities - ICT in Health
