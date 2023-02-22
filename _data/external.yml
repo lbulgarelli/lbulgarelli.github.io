@@ -110,6 +110,41 @@ articles:
   name: Articles
   limit: 4
   list:
+    - title: "MIMIC-IV, a freely accessible electronic health record dataset"
+      subtitle: Scientific Data
+      year: 2023
+      authors: Alistair EW Johnson, <strong>Lucas Bulgarelli</strong>, Lu Shen, Alvin Gayles, Ayad Shammout, Steven Horng, Tom J Pollard, Benjamin Moody, Brian Gow, Li-wei H Lehman, Leo A Celi, Roger G Mark
+      url: https://www.nature.com/articles/s41597-022-01899-x
+    - title: "Gene Expression Scoring of Immune Activity Levels for Precision Use of Hydrocortisone in Vasodilatory Shock"
+      subtitle: Shock
+      year: 2022
+      authors: Lijing Yao, Diego Ariel Rey, <strong>Lucas Bulgarelli</strong>, Rachel Kast, Jeff Osborn, Emily Van Ark, Li Tai Fang, Bayo Lau, Hugo Lam, Leonardo Maestri Teixeira, Ary Serpa Neto, Rinaldo Bellomo, Rodrigo Octávio Deliberato
+      url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8868213/
+    - title: "BRAX, a Brazilian labeled chest X-ray dataset"
+      subtitle: Scientific Data
+      year: 2022
+      authors: 
+      url: https://www.nature.com/articles/s41597-022-01608-8
+    - title: "281: Subphenotypes in COVID-19 ARDS: Secondary Analysis of a Randomized Clinical Trial"
+      subtitle: Critical Care Medicine
+      year: 2022
+      authors: Rachel Kast, <strong>Lucas Bulgarelli</strong>, Emily Van Ark, Jeff Osborn, Diego Rey, Matthew Siuba, Abhijit Duggal, Bruno Tomazini, Flavia Bueno, Alexandre Biasi, Camila Sampaio, Guilherme Olivato, Adriano Pereira, Felipe Dal-Pizzol, Luciano Azevedo, Ary Serpa Neto, Rodrigo Deliberato
+      url: https://journals.lww.com/ccmjournal/Citation/2022/01001/281__SUBPHENOTYPES_IN_COVID_19_ARDS__SECONDARY.247.aspx
+    - title: "12: Heterogeneity of Effect of Peep Strategy by Subphenotypes Derived from Clinical Data in ARDS"
+      subtitle: Critical Care Medicine
+      year: 2022
+      authors: Rachel Kast, <strong>Lucas Bulgarelli</strong>, Emily Van Ark, Jeff Osborn, Diego Rey, Abhijit Duggal, Matthew Siuba, Alexandre Biasi, Fernando Zampieri, Israel Maia, Denise Paisani, Ligia Laranjeira, Ary Serpa Neto, Rodrigo Deliberato
+      url: https://journals.lww.com/ccmjournal/Citation/2022/01001/12__HETEROGENEITY_OF_EFFECT_OF_PEEP_STRATEGY_BY.14.aspx
+    - title: "1089: Heterogeneity of Effect of Cisatracurium by Subphenotypes Derived from Clinical Data in ARDS"
+      subtitle: Critical Care Medicine
+      year: 2022
+      authors: <strong>Lucas Bulgarelli</strong>, Rachel Kast, Emily Van Ark, Jeff Osborn, Diego Rey, Matthew Siuba, Abhijit Duggal, Ary Serpa Neto, Rodrigo Deliberato
+      url: https://journals.lww.com/ccmjournal/Citation/2022/01001/1089__HETEROGENEITY_OF_EFFECT_OF_CISATRACURIUM_BY.1055.aspx
+    - title: "1124: Heterogeneity of Effect of Nutrition Strategies by Subphenotypes Derived from Clinical Data in ARDS"
+      subtitle: Critical Care Medicine
+      year: 2022
+      authors: <strong>Lucas Bulgarelli</strong>, Rachel Kast, Emily Van Ark, Jeff Osborn, Matthew Siuba, Abhijit Duggal, Ary Serpa Neto, Diego Rey, Rodrigo Deliberato
+      url: https://journals.lww.com/ccmjournal/Citation/2022/01001/1124__HETEROGENEITY_OF_EFFECT_OF_NUTRITION.1090.aspx
     - title: "Impact of sex on use of low tidal volume ventilation in invasively ventilated ICU patients—A mediation analysis using two observational cohorts"
       subtitle: PLoS ONE
       year: 2021
