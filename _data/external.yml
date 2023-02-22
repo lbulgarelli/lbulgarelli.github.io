@@ -123,7 +123,7 @@ articles:
     - title: "BRAX, a Brazilian labeled chest X-ray dataset"
       subtitle: Scientific Data
       year: 2022
-      authors: 
+      authors: Eduardo Pontes Reis, Joselisa Paiva, Maria Carolina Bueno da Silva, Guilherme Alberto Sousa Ribeiro, Victor Fornasiero Paiva, <strong>Lucas Bulgarelli</strong>, Henrique Lee, Paulo Victor dos Santos, Vanessa Brito, Lucas Amaral, Gabriel Beraldo, Jorge Nebhan Haidar Filho, Gustavo Teles, Gilberto Szarf, Tom Pollard, Alistair Johnson, Leo Anthony Celi, Edson Amaro
       url: https://www.nature.com/articles/s41597-022-01608-8
     - title: "281: Subphenotypes in COVID-19 ARDS: Secondary Analysis of a Randomized Clinical Trial"
       subtitle: Critical Care Medicine
