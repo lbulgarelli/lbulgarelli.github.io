@@ -2,11 +2,14 @@
   image_path: /assets/images/mimic.png
   description: Publicly available database of real hospital stays for patients admitted to a tertiary academic medical center in Boston, MA, USA.
   url: https://mimic-iv.mit.edu
-- title: Calibration
+- title: calibration
   image_path: /assets/images/calibration.png
-  description: Package for assessment of calibration in binomial prediction models.
+  description: Python package for assessing the calibration in binomial prediction models.
   url: https://github.com/lbulgarelli/calibration
 - title: pyROC
   image_path: /assets/images/pyroc.png
-  description: Package for calculating area under the ROC and p-values when comparing predictions.
-  url: https://github.com/alistairewj/pyroc
+  description: Python package for calculating and comparing multiple AUROCs.
+- title: tableone
+  image_path: /assets/images/table1.png
+  description: Python package for creating "Table 1" summary statistics for a patient population.
+  url: https://github.com/tompollard/tableone
