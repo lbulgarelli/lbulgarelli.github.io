@@ -110,6 +110,11 @@ articles:
   name: Articles
   limit: 4
   list:
+    - title: "Potential Impact of Subphenotyping in Pharmacologic Management of Acute Respiratory Distress Syndrome"
+      subtitle: Journal of Pharmacy Practice
+      year: 2023
+      authors: Heather Torbic, <strong>Lucas Bulgarelli</strong>, Rodrigo Octavio Deliberato, Abhijit Duggal
+      url: https://journals.sagepub.com/doi/abs/10.1177/08971900231185392
     - title: "MIMIC-IV, a freely accessible electronic health record dataset"
       subtitle: Scientific Data
       year: 2023
