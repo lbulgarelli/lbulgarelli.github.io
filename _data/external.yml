@@ -110,9 +110,29 @@ articles:
   name: Articles
   limit: 4
   list:
+    - title: ""
+      subtitle: 
+      year: 
+      authors: 
+      url: 
+    - title: "Assessing Heterogeneity in the Treatment Effect of Neuromuscular Blockade According to Subphenotypes Determined by Clusters Derived From Clinical Characteristics of Patients With ARDS"
+      subtitle: CHEST Critical Care
+      year: 2025
+      authors: Abhijit Duggal, Heather Torbic, <strong>Lucas Bulgarelli</strong>, Wellington dos Reis Lucena, Diego Ariel Rey, Rodrigo Octavio Deliberato, Ary Serpa Neto
+      url: https://www.sciencedirect.com/science/article/pii/S294978842500070X
+    - title: "Estimating the Effects of Continuous Albuterol Dosage on Clinical Outcomes for Pediatric Critical Asthma Exacerbation: A Retrospective Cohort Study"
+      subtitle: Pediatric Pulmonology
+      year: 2025
+      authors: Daniel P Riggins, Eneida A Mendonca, <strong>Lucas Bulgarelli</strong>, Patricia Tachinardi, Wanzhu Tu, Colin Rogerson
+      url: https://onlinelibrary.wiley.com/doi/full/10.1002/ppul.71293
+    - title: "Differential effect of positive end-expiratory pressure strategies in patients with ARDS: a Bayesian analysis of clinical subphenotypes"
+      subtitle: Chest
+      year: 2024
+      authors: Matthew T Siuba, <strong>Lucas Bulgarelli</strong>, Abhijit Duggal, Alexandre B Cavalcanti, Fernando G Zampieri, Diego Ariel Rey, Wellington dos Reis Lucena, Israel S Maia, Denise M Paisani, Ligia N Laranjeira, Ary Serpa Neto, Rodrigo Octávio Deliberato
+      url: https://www.sciencedirect.com/science/article/pii/S0012369224006305
     - title: "Potential Impact of Subphenotyping in Pharmacologic Management of Acute Respiratory Distress Syndrome"
       subtitle: Journal of Pharmacy Practice
-      year: 2023
+      year: 2024
       authors: Heather Torbic, <strong>Lucas Bulgarelli</strong>, Rodrigo Octavio Deliberato, Abhijit Duggal
       url: https://journals.sagepub.com/doi/abs/10.1177/08971900231185392
     - title: "MIMIC-IV, a freely accessible electronic health record dataset"
@@ -214,9 +234,4 @@ articles:
       subtitle: Revista Brasileira de Terapia Intensiva
       year: 2018
       authors: Ary Serpa Neto, Guillaume Kugener, <strong>Lucas Bulgarelli</strong>, Roberto Rabello Filho, Miguel Ángel Armengol de la Hoz, Alistair EW Johnson, Kenneth E Paik, Felipe Torres, Chen Xie, Edson Amaro Júnior, Leonardo José Rolim Ferraz, Leo Anthony Celi, Rodrigo Octavio Deliberato
-      url: https://www.scielo.br/scielo.php?pid=S0103-507X2018000100006&script=sci_arttext
-    - title: Primeiro datathon brasileiro em terapia intensiva
-      subtitle: Revista Brasileira de Terapia Intensiva
-      year: 2018
-      authors: Ary Serpa Neto, Guillaume Kugener, <strong>Lucas Bulgarelli</strong>, Roberto Rabello Filho, Miguel Ángel Armengol de la Hoz, Alistair EW Johnson, Kenneth E Paik, Felipe Torres, Chen Xie, Edson Amaro Júnior, Leonardo José Rolim Ferraz, Leo Anthony Celi, Rodrigo Octavio Deliberato
-      url: http://rbti.org.br/exportar-pdf/0103-507X-rbti-30-01-0006.pdf
+      url: https://www.scielo.br/j/rbti/a/jNKd6HQn7d5HG9HKvLVhQwr/?lang=en
